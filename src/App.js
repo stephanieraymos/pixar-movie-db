@@ -155,13 +155,8 @@ const App = () => {
               <div className="detailOverview">{currentMovie.overview}</div>
               {details.homepage ? (
                 <div className="detailHomepage">
-                  {/* Could have rendered "homepage" but had some extra time and wanted to try it with regex */}
-
                   <a
-                    href={`https://movies.disney.com/${currentMovie.title.replace(
-                      /\s/g,
-                      "-"
-                    )}`}
+                    href={details.homepage}
                     target="_blank"
                     rel="noreferrer"
                   >
