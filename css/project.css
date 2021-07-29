@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+/* line 9, src/scss/project.scss */
+body {
+  margin: 0px;
+  font-family: Verdana, Geneva, sans-serif; }
+
+/* line 13, src/scss/project.scss */
+.detailOuter {
+  background-color: #f2f2f2;
+  padding: 25px;
+  border-bottom: 1px solid #ccc;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* line 23, src/scss/project.scss */
+.detailBox {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  position: relative; }
+
+/* line 34, src/scss/project.scss */
+.badge-switch-left {
+  position: absolute;
+  left: -43px;
+  top: 148px; }
+
+/* line 39, src/scss/project.scss */
+.badge-switch-right {
+  position: absolute;
+  right: -45px;
+  top: 148px; }
+
+/* line 44, src/scss/project.scss */
+.badge-switch-left,
+.badge-switch-right {
+  font-size: 45px;
+  color: #ccc;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #000; }
+
+/* line 52, src/scss/project.scss */
+.detailPoster:hover {
+  cursor: pointer;
+  border-color: #ff7f11; }
+
+/* line 56, src/scss/project.scss */
+.detailOverview {
+  padding-top: 20px; }
+
+/* line 59, src/scss/project.scss */
+.detailField {
+  font-size: 12px;
+  margin-top: 2px; }
+
+/* line 63, src/scss/project.scss */
+.detailLabel {
+  width: 115px;
+  font-weight: bold;
+  display: inline-block; }
+
+/* line 68, src/scss/project.scss */
+.detailContent {
+  display: inline-block; }
+
+/* line 71, src/scss/project.scss */
+.detailText {
+  width: 460px;
+  vertical-align: top;
+  padding: 20px; }
+
+/* line 76, src/scss/project.scss */
+.detailTitle {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 14px; }
+
+/* line 81, src/scss/project.scss */
+.detailHomepage {
+  font-size: 11px;
+  margin-top: 15px; }
+
+/* line 85, src/scss/project.scss */
+.detailHomepage a {
+  color: #ff8b30; }
+
+/* line 88, src/scss/project.scss */
+.detailHomepage a:hover {
+  color: #ff7500; }
+
+/* line 93, src/scss/project.scss */
+.detailText,
+.detailPoster {
+  display: inline-block; }
+
+/* line 98, src/scss/project.scss */
+.tableOuter {
+  font-style: italic;
+  color: #ccc;
+  text-align: center;
+  width: 100%;
+  padding-top: 60px; }
+
+/* line 151, src/scss/project.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0; }
+
+/* line 158, src/scss/project.scss */
+body {
+  font-family: "Poppins", sans-serif; }
+
+/* line 162, src/scss/project.scss */
+.header {
+  padding: 50px 15px;
+  background-color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 40px; }
+  /* line 168, src/scss/project.scss */
+  .header h1 {
+    font-size: 40px;
+    font-weight: 300; }
+
+/* line 174, src/scss/project.scss */
+.table-container {
+  width: 94%;
+  margin: 0 auto 10px; }
+  /* line 178, src/scss/project.scss */
+  .table-container__title {
+    background-color: #ff7f11;
+    color: #fff;
+    text-align: center;
+    padding: 10px; }
+    /* line 184, src/scss/project.scss */
+    .table-container__title h2 {
+      font-size: 24px;
+      font-weight: 300; }
+  /* line 190, src/scss/project.scss */
+  .table-container__table {
+    width: 100%;
+    border-collapse: collapse; }
+    /* line 195, src/scss/project.scss */
+    .table-container__table thead tr {
+      background-color: transparent; }
+    /* line 200, src/scss/project.scss */
+    .table-container__table td,
+    .table-container__table th {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center; }
+    /* line 208, src/scss/project.scss */
+    .table-container__table tr:nth-child(even) {
+      background-color: #f1f1f1; }
+    @media (max-width: 991px) {
+      /* line 113, src/scss/project.scss */
+      .table-container__table--break-lg thead {
+        display: none; }
+      /* line 117, src/scss/project.scss */
+      .table-container__table--break-lg tr {
+        display: block;
+        margin-bottom: 5px; }
+      /* line 122, src/scss/project.scss */
+      .table-container__table--break-lg td {
+        display: block;
+        position: relative;
+        padding-left: 130px;
+        text-align: left;
+        border-bottom: 0; }
+        /* line 129, src/scss/project.scss */
+        .table-container__table--break-lg td:last-child {
+          border-bottom: 1px solid #ddd; }
+        /* line 133, src/scss/project.scss */
+        .table-container__table--break-lg td::before {
+          content: attr(data-heading);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 120px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          background-color: #ff7f11;
+          color: #fff;
+          font-size: 0.75rem;
+          padding: 0 5px;
+          justify-content: center; } }
+    @media (max-width: 767px) {
+      /* line 113, src/scss/project.scss */
+      .table-container__table--break-md thead {
+        display: none; }
+      /* line 117, src/scss/project.scss */
+      .table-container__table--break-md tr {
+        display: block;
+        margin-bottom: 5px; }
+      /* line 122, src/scss/project.scss */
+      .table-container__table--break-md td {
+        display: block;
+        position: relative;
+        padding-left: 130px;
+        text-align: left;
+        border-bottom: 0; }
+        /* line 129, src/scss/project.scss */
+        .table-container__table--break-md td:last-child {
+          border-bottom: 1px solid #ddd; }
+        /* line 133, src/scss/project.scss */
+        .table-container__table--break-md td::before {
+          content: attr(data-heading);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 120px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          background-color: #ff7f11;
+          color: #fff;
+          font-size: 0.75rem;
+          padding: 0 5px;
+          justify-content: center; } }
+    @media (max-width: 575px) {
+      /* line 113, src/scss/project.scss */
+      .table-container__table--break-sm thead {
+        display: none; }
+      /* line 117, src/scss/project.scss */
+      .table-container__table--break-sm tr {
+        display: block;
+        margin-bottom: 5px; }
+      /* line 122, src/scss/project.scss */
+      .table-container__table--break-sm td {
+        display: block;
+        position: relative;
+        padding-left: 130px;
+        text-align: left;
+        border-bottom: 0; }
+        /* line 129, src/scss/project.scss */
+        .table-container__table--break-sm td:last-child {
+          border-bottom: 1px solid #ddd; }
+        /* line 133, src/scss/project.scss */
+        .table-container__table--break-sm td::before {
+          content: attr(data-heading);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 120px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          background-color: #ff7f11;
+          color: #fff;
+          font-size: 0.75rem;
+          padding: 0 5px;
+          justify-content: center; } }
